@@ -29,7 +29,22 @@
 
 To run this repository locally on your machine, follow these steps:
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/Jesicha18/ARAH-Alat-Ramah-Akses-Harian-.git](https://github.com/Jesicha18/ARAH-Alat-Ramah-Akses-Harian-.git)
-   cd ARAH-Alat-Ramah-Akses-Harian-
+### Step 1: Clone the Repository
+Open your terminal or command prompt and run the following command to clone this repository:
+git clone [https://github.com/Jesicha18/ARAH-Alat-Ramah-Akses-Harian-.git](https://github.com/Jesicha18/ARAH-Alat-Ramah-Akses-Harian-.git)
+cd ARAH-Alat-Ramah-Akses-Harian-
+
+### Step 2: Install PHP Dependencies
+composer install
+
+### Step 3: Environment Configuration
+cp .env.example .env
+Next, generate the application encryption key:
+
+### Step 4: Run Database Migrations
+php artisan migrate
+
+### Step 5: Start the Development Server
+php artisan serve
+
+Sekarang baris `git clone`-nya sudah bersih total dan siap digunakan di `README.md` GitHub kamu!
